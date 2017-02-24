@@ -43,7 +43,7 @@ RUN composer global require "fxp/composer-asset-plugin:~1.1.3"
 RUN apt-get -y purge mysql-client-core-5.6 && \
   apt-get -y autoremove && \
   apt-get -y autoclean && \
-  apt-get -y install mysql-client-core-5.5 && \
+  apt-get -y install mysql-client-core-5.7 && \
   apt-get -y install mysql-server
 
 EXPOSE 80
