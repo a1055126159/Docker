@@ -28,7 +28,7 @@ RUN sed -i "s/# server_tokens off;/server_tokens off;/" /etc/nginx/nginx.conf
 RUN LC_ALL=en_US.UTF-8 add-apt-repository ppa:ondrej/php && apt-get update
 
 # Installing PHP packages
-RUN apt-get install -y mysql-client-5.6 \
+RUN apt-get install -y mysql-client-5.7 \
     php-apcu php7.0-curl php7.0-fpm php7.0-gd php-imagick php7.0-json \
     php7.0-intl php-memcached php7.0-mcrypt php7.0-mysql php-mongodb \
     php-pear php-redis php7.0-xsl php7.0-mbstring php7.0-zip php7.0-xml php7.0-opcache
