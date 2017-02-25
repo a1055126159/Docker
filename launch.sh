@@ -2,11 +2,7 @@
 
 # 配置 mysql
 config_mysql() {
-  echo 'start config mysql...'
-  mysqld_safe &
-  echo 'sleep 3s for mysql to launch'
-  sleep 3
-  mysql < /db.sql
+  bash ./database_config.sh
 }
 
 # 启动服务
