@@ -23,6 +23,8 @@ config_code() {
   cd /var/data/Hifone
   cp .env.example .env
   composer install --no-dev -o
+  rm database/migrations/2013*
+  rm database/migrations/2014*
   php artisan hifone:install
   chmod -R 777 storage
   chmod -R 777 bootstrap/cache
